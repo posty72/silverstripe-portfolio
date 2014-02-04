@@ -1,0 +1,8 @@
+# Logs and Databases #
+*.log
+*.sql
+
+.htaccess
+mysite/_config/*
+mysite/.htaccess
+mysite/*.php
