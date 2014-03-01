@@ -1,42 +1,47 @@
-<section class="main" id="portfolio-page">
-	<div class="container">
+<section class="main row" id="portfolio-page">
+	<div class="container large-12 small-12">
 		<h1>$Title</h1>
 		$Content
 
 		<script id="prf-button" data-client="ABC" data-vacancy="XYZ" type="text/javascript" src="http://prefer.referral.local/prefer.php"></script>
 
-		<% loop Websites %>
-			<div class="website-scroll-to-link col left quarter pointer animate" data-link="$Title" style="background-image: url('$Image.URL');">
-				<p>$Title</p>
-			</div>
-		<% end_loop %>
+		<div class="row">
+			<% loop Websites %>
+				<div class="website-scroll-to-link large-3 small-6 columns pointer animate" data-link="$Title">
+					<p>$Title</p>
+					$Image
+				</div>
+			<% end_loop %>
+		</div>
 
 		<div class="clear show-scroll-top"></div>
 
-		<% loop Websites %>
-			<article class="website col left full" data-section="$Title" style="background-image: url($Image.URL);">
+		<div class="row">
+			<% loop Websites %>
+				<article class="website large-12 small-12 columns" data-section="$Title">
 
-				<a class="website-div-link" href="$Link" target="_blank">Click to view the $Title website here</a>
+					<h1 class="website-title"><a href="$Link">$Title</a></h1>
 
-				<h1 class="website-title"><a href="$Link">$Title</a></h1>
+					$Image
 
-				<div class="website-info animate">
+					<div class="website-info animate">
 
-					<div class="website-description">$Content</div>
+						$Content
 
-					<% if GithubLink %> 
-						<p class="website-github"><a href="$GithubLink" target="_blank">View the source for this project on Github</a></p>
-					<% end_if %>
+						<% if GithubLink %> 
+							<p class="website-github"><a href="$GithubLink" target="_blank">View the source for this project on Github</a></p>
+						<% end_if %>
 
-					<% if Company %>
-						<p class="website-company">Made for $Company</p>
-					<% end_if %>
+						<% if Company %>
+							<p class="website-company">Made for $Company</p>
+						<% end_if %>
 
-					<h5 class="website-link"><a href="$Link">View $Title here</a></h5>
-				</div>
+						<h5 class="website-link"><a href="$Link">View $Title here</a></h5>
+					</div>
 
-			</article>
-		<% end_loop %>
+				</article>
+			<% end_loop %>
+		</div>
 
 		<div class="clear"></div>
 		<div class="scroll-top pointer">Scroll to the top</div>

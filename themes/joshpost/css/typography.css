@@ -243,18 +243,20 @@ td {
 
 /* HEADER */
 
-header h2 { font-size: 2.5em; }
+header h2 { font-size: 5em; text-align: center;}
 
 header h2 a {
 	font-family: "Open sans", Helvetica, Arial, sans-serif;
 	color: #000;
 }
 
+header li { text-align: center;}
+
 header p { 
+	text-align: center;
 	text-transform: uppercase;
 	font-style: italic;
 	font-size: .8em; }
-header .contact-info { margin: 20px; }
 
 
 /* Body */
@@ -348,14 +350,12 @@ header .contact-info { margin: 20px; }
 }
 
 
-
-
 @media only all and (max-width: 480px) {
 
 
 	h1 { 
 		color: #000; 
-		font-size: 2.3em;
+		font-size: 2em;
 	}
 
 	h2 { 
@@ -363,7 +363,7 @@ header .contact-info { margin: 20px; }
 		font-style: lighter;
 		font-style: italic;
 		text-transform: uppercase;
-		font-size: 2.0em;
+		font-size: 1.8em;
 	}	
 
 	h3 { 
@@ -386,6 +386,5 @@ header .contact-info { margin: 20px; }
 		color:#000; 
 		font-size: 1.2em;
 	}
-
 
 }

@@ -14,6 +14,8 @@ $MetaTags(false)
 
 <!-- Google Fonts -->
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600' rel='stylesheet' type='text/css'>
+<!-- Foundations -->
+<link href="$ThemeDir/css/foundation.min.css" rel="stylesheet" type="text/css" />
 
 <!-- Javascripts -->
 
@@ -49,11 +51,13 @@ document.location.href = link.href;
   })();
 </script>
 
+<!-- jQuery -->
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
-<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+<!-- jQuery UI -->
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+<!-- Homebaked -->
 <script type="text/javascript" src="$ThemeDir/js/script.js"></script>
 
-<% require javascript('$ThemeDir/js/script.js') %>
 
 
 
@@ -63,18 +67,17 @@ document.location.href = link.href;
 
 <header itemscope>
 	<div class="container">
-		<img src="/assets/josh-post-logo.png" alt="Josh Post Logo" width="225" height="225" />
 		<h2 itemprop="name"><a href="index.html">$SiteConfig.Title</a></h2>
-		<p itemprop="title">Web Development / <strong class="red">Wellington</strong></p>
+		<p itemprop="title">Web Development / <strong class="red">New Zealand</strong></p>
 		<div class="clear"></div>
 
 		<% include Navigation %>
 
-		<div class="contact-info">
+		<div class="contact-info row">
 			<ul>
-				<li><span class="green">Phone:</span> +64 27 253 0285</li>
-				<li><span class="green">Email:</span> josh@josh-post.com</li>
-				<li><span class="green">Twitter:</span> <a class="grey" href="http://twitter.com/posty72">@posty72</a></li>
+				<li class="large-4 small-12 columns"><span class="green">Phone:</span> +64 27 253 0285</li>
+				<li class="large-4 small-12 columns"><span class="green">Email:</span> josh@josh-post.com</li>
+				<li class="large-4 small-12 columns"><span class="green">Twitter:</span> <a class="grey" href="http://twitter.com/posty72">@posty72</a></li>
 			</ul>
 		</div>
 
