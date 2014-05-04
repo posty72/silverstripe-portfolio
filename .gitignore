@@ -6,3 +6,7 @@
 mysite/_config/*
 mysite/.htaccess
 mysite/*.php
+*.bak
+sftp-config.json
+assets/Uploads/*
+assets/_resampled/*

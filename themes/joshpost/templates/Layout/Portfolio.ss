@@ -1,11 +1,9 @@
-<section class="main row" id="portfolio-page">
-	<div class="container large-12 small-12">
-		<h1>$Title</h1>
-		$Content
+<section class="main" id="portfolio-page">
+	<div class="container">
 
-		<script id="prf-button" data-client="ABC" data-vacancy="XYZ" type="text/javascript" src="http://prefer.referral.local/prefer.php"></script>
-
-		<div class="row">
+		<div class="row white-bg">
+			<h1>$Title</h1>
+			$Content
 			<% loop Websites %>
 				<div class="website-scroll-to-link large-3 small-6 columns pointer animate" data-link="$Title">
 					<p>$Title</p>
