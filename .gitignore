@@ -10,3 +10,7 @@ mysite/*.php
 sftp-config.json
 assets/Uploads/*
 assets/_resampled/*
+assets/_combinedfiles/*
+framework/error_log
+silverstripe-cache/*
+
