@@ -22,6 +22,15 @@ class Website extends DataObject {
 
 	static $default_sort = 'SortID';
 
+	function getWebsite () {
+      if($this->isAjax) { 
+         return $this->renderWith("Website"); 
+      } 
+      else { 
+         return Array(); 
+      } 
+   }
+
 	function getCMSFields() {
 
 		$fields = new FieldList(
@@ -37,4 +46,5 @@ class Website extends DataObject {
 		return $fields;
 
 	}
-}
+
+} 

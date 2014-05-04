@@ -63,10 +63,25 @@ $(document).ready(function() {
 
 		var fromTop = 57;
 
-		console.log($('[data-section="'+link+'"]').data('section'));
+		//console.log($('[data-section="'+link+'"]').data('section'));
 
 		$('html, body').animate({
 		    scrollTop: ($('[data-section="'+link+'"]').offset().top - 40)
 		},400);
 	});
+
+	// 'ajax/code/Website.php',
+	// 'ajax/templates/Website.ss',
+
+	var q = 'Blahhhh';
+
+	$('.website').ajax(
+			'mysite/code/dataobject/Websi',
+			function(data, status){
+				console.log('Function ran');
+				console.log(data);
+				console.log(status);
+			}
+		);
+
 });

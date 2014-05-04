@@ -1,7 +1,7 @@
 <% include BlogSideBar %>
 
 <section id="BlogContent" class="blogcontent main">
-	<div class="container">
+	<div class="container row">
 
 		<h1>$Title</h1>
 
@@ -9,7 +9,9 @@
 		
 		<% if BlogEntries %>
 			<% loop BlogEntries %>
-				<% include BlogSummary %>
+				<div class="large-12 small-12 columns">
+					<% include BlogSummary %>
+				</div>
 			<% end_loop %>
 		<% else %>
 			<h2><% _t('BlogHolder_ss.NOENTRIES', 'There are no blog entries') %></h2>
