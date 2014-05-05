@@ -245,10 +245,11 @@ header nav #navLinks li.current { border-bottom: 3px solid #A11222; }
 	max-width: none;
 	height: 100%;
 	padding-top: 10%;
+	position: relative;
 }
 
 #home-page .container #home-callout img {
-	width: 20%;
+	width: 250px;
 	border-radius: 99em;
 	border: 7px solid #ededed;
 	margin: 0 auto;
@@ -260,6 +261,14 @@ header nav #navLinks li.current { border-bottom: 3px solid #A11222; }
 	height: 100%;
 	display: block;
 
+}
+.home-div p {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	background-color: #000;
+	margin: 0;
+	padding: .5% !important;
 }
 
 #home-page .container .home-div .call-to-action {
@@ -465,11 +474,6 @@ footer .container .footer-info {
 		margin: 0 auto;
 		border-left: none;
 	}
-
-
-	#home-page .container #home-callout img {
-		width: 30%;
-	}
 }
 
 
@@ -502,12 +506,6 @@ footer .container .footer-info {
 	.main .container {
 		width: 98% !important;
 		margin: 0 1%;
-	}
-
-
-
-	#home-page .container #home-callout img {
-		width: 50%;
 	}
 
 	#portfolio-page .website-scroll-to-link { display: none; }
@@ -546,6 +544,11 @@ footer .container .footer-info {
 	#home-page .container #home-callout img {
 		width: 80%;
 	}
+
+
+.home-div p {
+	display: none;
+}
 
 	.main, footer {
 		width: 100%;
