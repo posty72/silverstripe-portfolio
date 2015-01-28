@@ -34,7 +34,9 @@
 							<p class="website-company">Made for $Company</p>
 						<% end_if %>
 
-						<h5 class="website-link"><a href="$Link">View $Title here</a></h5>
+						<% if Link %>
+							<h5 class="website-link"><a href="$Link">View $Title here</a></h5>
+						<% end_if %>
 					</div>
 
 				</article>

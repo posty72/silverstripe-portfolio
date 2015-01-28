@@ -232,24 +232,22 @@ td {
 
 /* HEADER */
 
-header h2 { 
-	font-size: 6em; 
-	letter-spacing: -6px;
-	text-align: center;
-}
+header h2 {
+	letter-spacing: -2px;
+	text-align: left;
+	display: block;}
 
 header h2 a {
 	font-family: "Open sans", Helvetica, Arial, sans-serif;
 	color: #000;
 }
 
-header li { text-align: center;}
-
 header p { 
-	text-align: center;
+	text-align: left;
 	text-transform: uppercase;
 	font-style: italic;
-	font-size: .8em; }
+	font-size: .8em;
+	display: block;}
 
 
 /* Body */
@@ -280,7 +278,7 @@ header p {
 	margin: 2% 0;
 	padding: 10% 0;
 	font-size: 2em;
-	letter-spacing: -3px;
+	letter-spacing: -1px;
 	background-color: #efefef;
 }
 .home-div p {
@@ -406,6 +404,15 @@ header p {
 	h6 { 
 		color:#000; 
 		font-size: 1.2em;
+	}
+
+	.headerText h2,
+	.headerText p {
+		text-align: center;
+	}
+
+	.contact-info li {
+		text-align: center;
 	}
 
 }

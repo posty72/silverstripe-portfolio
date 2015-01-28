@@ -11,6 +11,8 @@ sftp-config.json
 assets/Uploads/*
 assets/_resampled/*
 assets/_combinedfiles/*
-framework/error_log
+framework/*
+cms/*
 silverstripe-cache/*
+
 

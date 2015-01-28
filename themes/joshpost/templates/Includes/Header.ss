@@ -65,8 +65,11 @@ document.location.href = link.href;
 
 <header itemscope>
 	<div class="container">
-		<h2 itemprop="name"><a href="/">$SiteConfig.Title</a></h2>
-		<p itemprop="title">Web Development / <strong class="red">New Zealand</strong></p>
+		<img class="leftAlone" title="" src="assets/Uploads/_resampled/ResizedImage600611-linkedin-profile.jpg" alt="linkedin profile" width="600" height="611">
+		<div class="headerText">
+			<h2 itemprop="name"><a href="/">$SiteConfig.Title</a></h2>
+			<p itemprop="title">Web Development / <strong class="red">New Zealand</strong></p>
+		</div>
 		<div class="clear"></div>
 
 		<% include Navigation %>
@@ -77,15 +80,17 @@ document.location.href = link.href;
 				<li class="large-4 small-12 columns"><span class="green">Twitter:</span> <a class="grey" href="http://twitter.com/posty72">@posty72</a></li>
 				<li id="search" class="large-4 small-12 columns">$SearchForm</li>
 			</ul>
+			<div class="clear"></div>
 		</div>
 
 
-		<ul id="externalLinks">
-			<li><a id="LinkedInLink" href="http://nz.linkedin.com/in/joshpost"  onClick="trackOutboundLink(this, 'Outbound Links', 'nz.linkedin.com/in/joshpost'); return false;">LinkedIn</a></li>
-			<li><a id="GooglePlusLink" href="https://plus.google.com/u/0/107365828336613471149?rel=author"  onClick="trackOutboundLink(this, 'Outbound Links', 'https://plus.google.com/u/0/107365828336613471149?rel=author'); return false;">Google+</a></li>
-			<li><a id="TwitterLink" href="http://twitter.com/posty72"  onClick="trackOutboundLink(this, 'Outbound Links', 'http://twitter.com/posty72'); return false;">Twitter</a></li>
-			<li><a id="GithubLink" href="http://github.com/posty72"  onClick="trackOutboundLink(this, 'Outbound Links', 'github.com/posty72'); return false;">Github</a></li>
-		</ul>
 		<div class="clear"></div>
 	</div>
+	<div class="clear"></div>
 </header>
+<ul id="externalLinks">
+	<li><a id="LinkedInLink" href="http://nz.linkedin.com/in/joshpost" target="_blank">LinkedIn</a></li>
+	<li><a id="RdioLink" href="http://www.rdio.com/people/posty72/" target="_blank">Google+</a></li>
+	<li><a id="TwitterLink" href="http://twitter.com/posty72" target="_blank">Twitter</a></li>
+	<li><a id="GithubLink" href="http://github.com/posty72" target="_blank">Github</a></li>
+</ul>

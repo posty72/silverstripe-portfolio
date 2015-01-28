@@ -35,7 +35,10 @@ html {
 
 .animate { transition: 400ms; }
 .fixed { position: fixed; }
-.container { margin: 0 auto; }
+.container { 
+	margin: 0 auto;
+	max-width: 980px;
+}
 
 .white { color: #fff; }
 .black { color: #000 }
@@ -88,15 +91,29 @@ img, video, iframe { max-width: 100%; }
 /* HEADER */
 
 header {
-	background-color: #fff;
-	z-index: 5;
-	padding-bottom: 1px;
+	background-image: url('/assets/Uploads/generic-callout2.jpg');
+	background-color: #000;
+	background-size: 100%;
+	background-position: center;
+}
+
+header .container {
+	background-color: rgba(255,255,255,0.8);
+}
+
+header .headerText {
+	float: left;
+	padding-left: 20px;
 }
 
 header img { 
 	padding: 10px;
-	display: none;
 	margin: 0 auto;
+	float: left;
+	width: 250px;
+	border-radius: 99em;
+	/* padding: 10px; */
+	box-shadow: 3px 3px 3px #7b7b7b;
 }
 
 header h2 {	padding: 0; }
@@ -105,13 +122,16 @@ header nav { margin-top: 30px; }
 header nav #navLinks { margin: 0; }
 
 header nav #navLinks li a {	
-	color: #2FBC42;
+	color: #fff;
 	padding: 15px;
 	display: block;
+	border-bottom: 3px solid transparent;
+	background-color: #2FBC42;
 }
 
-header nav #navLinks li { border-bottom: 3px solid transparent; }
-header nav #navLinks li.current { border-bottom: 3px solid #A11222; }
+header nav #navLinks li { 
+}
+header nav #navLinks li.current a { border-bottom: 3px solid #A11222; }
 
 #search form,
 #search fieldset { 
@@ -151,6 +171,9 @@ header nav #navLinks li.current { border-bottom: 3px solid #A11222; }
 
 #navLinks, header .contact-info { padding: 10px 0;}
 
+header .contact-info {
+	background-color: #fff;}
+
 #externalLinks {
 	margin: 0;
 	padding: 0 5px;
@@ -160,6 +183,7 @@ header nav #navLinks li.current { border-bottom: 3px solid #A11222; }
 	height: 25px;
 	top: 0;
 	border-top: none;
+	z-index: 30;
 }
 
 #externalLinks li {
@@ -177,6 +201,7 @@ header nav #navLinks li.current { border-bottom: 3px solid #A11222; }
 	height: inherit;
 	background-position: center;
 	background-size: 100%;
+	background-repeat: no-repeat;
 	-moz-transition: all 0.3s ease-in-out;
 	-webkit-transition: all 0.3s ease-in-out;
 	/*transition: all 0.5s;*/
@@ -184,11 +209,16 @@ header nav #navLinks li.current { border-bottom: 3px solid #A11222; }
 
 #externalLinks #LinkedInLink {background-image: url('../images/icons/linkedin.png');}
 #externalLinks #GooglePlusLink {background-image: url('../images/icons/google-plus.png');}
+#externalLinks #RdioLink {background-image: url('../images/icons/rdio.png');}
 #externalLinks #TwitterLink {background-image: url('../images/icons/twitter.png');}
 #externalLinks #GithubLink {background-image: url('../images/icons/github.png');}
 
 
 /* BODY */
+
+body > section {
+	background-color: #fff;
+}
 
 .main { margin: 0 auto; }
 .main .container { padding-top: 50px; }
@@ -200,7 +230,7 @@ header nav #navLinks li.current { border-bottom: 3px solid #A11222; }
 .scroll-top {
 	display: none;
 	padding: 5px 40px 5px 5px;
-	position: fixed
+	position: fixed;
 	top: 0;
 	right: 20px;
 	background-color: #2FBC42;
@@ -256,20 +286,28 @@ header nav #navLinks li.current { border-bottom: 3px solid #A11222; }
 	display: block;
 }
 
+#home-portfolio,
+#home-blog {
+	position: absolute;
+	z-index: 30;
+	bottom: 0;
+	width: 400px;
+	max-width: 50%;
+}
+
+#home-blog {right: 0;}
+
 .home-div .home-div-link {
 	width: 100%;
 	height: 100%;
 	display: block;
+	background-color: #2FBC42;
+	color: #fff;
+	font-size: 1em;
 
 }
 .home-div p {
-	position: absolute;
-	bottom: 0;
-	width: 100%;
-	background-color: #000;
-	margin: 0;
-	padding: .5% !important;
-}
+display: none;}
 
 #home-page .container .home-div .call-to-action {
 	margin-top: 200px;
@@ -416,9 +454,14 @@ header nav #navLinks li.current { border-bottom: 3px solid #A11222; }
 
 /* FOOTER */
 
+footer {
+	background-color: #ededed;
+}
 footer .container { padding-top: 10px; }
 footer .container li a:hover { opacity: 1; }
-footer .contact-info { margin-top: 10px;}
+footer .contact-info { 
+	margin-top: 10px;
+}
 
 footer .container .footer-info { 
 	margin: 0 auto;
@@ -436,13 +479,6 @@ footer .container .footer-info {
 		width: 100%;
 	}
 
-	header img {
-		margin: 0;
-		float: left;
-		height: 50px;
-		width: 50px;
-	}
-
 	header p {
 		margin-top: 33px;
 		padding: 0;
@@ -452,7 +488,6 @@ footer .container .footer-info {
 
 	header nav #navLinks li.current {
 		border-left: none;
-		border-bottom: 2px solid #A11222;
 	}
 
 	#externalLinks {
@@ -538,6 +573,18 @@ footer .container .footer-info {
 	/* MOBILE HEADER */
 
 	#externalLinks { display: none;	}
+
+	header img {
+		max-width: 25%;
+		float: none;
+		margin: 0 auto;
+		display: block;
+	}
+
+	header .headerText {
+		float: none;
+		padding-left: 0;
+	}
 
 	/* TABLET BODY */
 

@@ -70,18 +70,4 @@ $(document).ready(function() {
 		},400);
 	});
 
-	// 'ajax/code/Website.php',
-	// 'ajax/templates/Website.ss',
-
-	var q = 'Blahhhh';
-
-	$('.website').ajax(
-			'mysite/code/dataobject/Websi',
-			function(data, status){
-				console.log('Function ran');
-				console.log(data);
-				console.log(status);
-			}
-		);
-
 });
