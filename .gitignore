@@ -1,0 +1,18 @@
+# Logs and Databases #
+*.log
+*.sql
+
+.htaccess
+mysite/_config/*
+mysite/.htaccess
+mysite/*.php
+*.bak
+sftp-config.json
+assets/Uploads/*
+assets/_resampled/*
+assets/_combinedfiles/*
+framework/*
+cms/*
+silverstripe-cache/*
+
+
