@@ -35,6 +35,8 @@ logs/
 sapphire/
 silverstripe-cache/
 uploadify/
+*/_config/
+*/_config.php
 
 
 # Composer files #
